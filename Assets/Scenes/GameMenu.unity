@@ -342,7 +342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: ...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -351,8 +351,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -654,6 +654,7 @@ GameObject:
   - component: {fileID: 368634140}
   - component: {fileID: 368634139}
   - component: {fileID: 368634138}
+  - component: {fileID: 368634141}
   m_Layer: 5
   m_Name: JOKE
   m_TagString: Untagged
@@ -726,7 +727,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 368634139}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 368634141}
+        m_TargetAssemblyTypeName: TheGlumatoare, Assembly-CSharp
+        m_MethodName: Gluma
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &368634139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +778,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368634136}
   m_CullTransparentMesh: 1
+--- !u!114 &368634141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368634136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26301a0d912d7d489e9486a7756ece7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glume:
+  - '"Want to hear a joke?'
+  - "What did one wall say to another?  \u201CSee you at the corner\u201D."
+  - Which chess piece do dogs prefer? A pawn.
+  - ' Why do actors break a leg? Because every play has a cast.'
+  - ' What do you call a fake noodle? An im-pasta.'
+  - ' How do you make an artichoke? You strangle it.'
+  - ' What did one plate whisper to the other plate? Dinner is on me.'
+  - ' What did one plate whisper to the other plate? Dinner is on me.'
+  - ' How many lips does a flower have? Tu-lips.'
+  - " What\u2019s red and smells like blue paint? Red Paint."
+  - ' What do you call a rich elf? Welfy.'
+  text: {fileID: 23972618}
 --- !u!1 &384272940
 GameObject:
   m_ObjectHideFlags: 0

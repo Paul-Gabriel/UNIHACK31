@@ -367,10 +367,11 @@
 "Assets/Scripts/Games.cs"
 "Assets/Scripts/LinksScript.cs"
 "Assets/Scripts/MainMenu.cs"
-"Assets/Scripts/random number.cs"
 "Assets/Scripts/randomnr.cs"
 "Assets/Scripts/Semn.cs"
+"Assets/Scripts/TheGlumatoare.cs"
 "Assets/Scripts/TimerInsert_Function.cs"
+"Assets/SettingsMenu.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
