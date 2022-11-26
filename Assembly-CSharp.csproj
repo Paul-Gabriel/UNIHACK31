@@ -56,14 +56,15 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Games.cs" />
     <Compile Include="Assets\Scripts\GameManagerColorG.cs" />
     <Compile Include="Assets\Scripts\randomnr.cs" />
     <Compile Include="Assets\Scripts\TimerInsert_Function.cs" />
-    <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Semn.cs" />
     <Compile Include="Assets\Scripts\random number.cs" />
-    <Compile Include="Assets\Games.cs" />
+    <Compile Include="Assets\Scripts\LinksScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
