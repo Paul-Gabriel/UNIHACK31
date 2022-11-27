@@ -4,14 +4,15 @@ using System.Runtime.CompilerServices;
 using Unity.Notifications.Android;
 using UnityEngine;
 using UnityEngine.Android;
+using UnityEngine.UI;
 
 public class TimerInsert_Function : MonoBehaviour
 {
     #region Masa
-    [Header ("Breakfast/Lunch/Dinner")]
-    public string OraMasa1;
-    public string OraMasa2;
-    public string OraMasa3;
+    [Header("Breakfast/Lunch/Dinner")]
+    public string OraMasa1 = "9";
+    public string OraMasa2 = "13";
+    public string OraMasa3 = "18";
 
     private float _duration_eating = 1200f; //trimite o notificare odata la 20 de minute
     private float _timer_eating = 0f; //in secunde
@@ -28,7 +29,7 @@ public class TimerInsert_Function : MonoBehaviour
 
     #region BedTime
     [Header("BedTime")]
-    public string OraCulcare;
+    public string OraCulcare = "20";
 
     private float _duration_GoToSleep = 600; //trimite o notificare odata la 10 de minute
     private float _timer_sleeping = 0f; //in secunde
@@ -111,5 +112,53 @@ public class TimerInsert_Function : MonoBehaviour
 
         //send the notificaton
         AndroidNotificationCenter.SendNotification(notification, "channel_id");
+    }
+
+    public void InOraMasa1()
+    {
+        InputField inputField = GetComponent<InputField>();
+        string value = inputField.text;
+        if (string.IsNullOrEmpty(value))
+        {
+            Debug.LogError("OraMasa1 is empty");
+            return;
+        }
+        OraMasa1 = value;
+    }
+
+    public void InOraMasa2()
+    {
+        InputField inputField = GetComponent<InputField>();
+        string value = inputField.text;
+        if (string.IsNullOrEmpty(value))
+        {
+            Debug.LogError("OraMasa2 is empty");
+            return;
+        }
+        OraMasa2 = value;
+    }
+
+    public void InOraMasa3()
+    {
+        InputField inputField = GetComponent<InputField>();
+        string value = inputField.text;
+        if (string.IsNullOrEmpty(value))
+        {
+            Debug.LogError("OraMasa3 is empty");
+            return;
+        }
+        OraMasa3 = value;
+    }
+
+    public void InOraCulcare()
+    {
+        InputField inputField = GetComponent<InputField>();
+        string value = inputField.text;
+        if (string.IsNullOrEmpty(value))
+        {
+            Debug.LogError("OraCulcare is empty");
+            return;
+        }
+        OraCulcare = value;
     }
 }
