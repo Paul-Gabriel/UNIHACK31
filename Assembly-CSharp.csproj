@@ -58,14 +58,15 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Games.cs" />
     <Compile Include="Assets\Scripts\GameManagerColorG.cs" />
+    <Compile Include="Assets\Scripts\TheGlumatoare.cs" />
     <Compile Include="Assets\Scripts\randomnr.cs" />
     <Compile Include="Assets\Scripts\TimerInsert_Function.cs" />
+    <Compile Include="Assets\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Semn.cs" />
     <Compile Include="Assets\Scripts\LinksScript.cs" />
-    <Compile Include="Assets\Scripts\TheGlumatoare.cs" />
-    <Compile Include="Assets\SettingsMenu.cs" />
+    <Compile Include="Assets\Scripts\BackButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -342,12 +343,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
